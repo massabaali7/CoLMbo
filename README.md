@@ -1,5 +1,5 @@
 
-# CoLMbo: A Speaker Language Model for Descriptive Profiling
+# 🕵 CoLMbo: A Speaker Language Model for Descriptive Profiling
 
 CoLMbo is a **Speaker Language Model (SLM)** designed to go beyond traditional speaker recognition. While most systems stop at identifying “who” the speaker is, CoLMbo answers **“what is this speaker like?”** by generating **context-rich, descriptive captions** from speaker embeddings including **gender, age, personality**, and **dialect**.
 
@@ -52,7 +52,7 @@ from this Google Drive:
 
 ## 🗃️ Datasets
 
-We use the **TEARS dataset** for evaluation and training. You can get it here:
+We use the **TEARS dataset** 😭 for evaluation and training. You can get it here:
 
 - 📦 [TEARS Dataset on HuggingFace](https://huggingface.co/datasets/cmu-mlsp/TEARS)
 
