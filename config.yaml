@@ -1,0 +1,52 @@
+# config.yaml
+train_mapper: True
+train_sid: False
+
+data:
+  train: dictionaries/train_segdata.json
+  val: dictionaries/val_segdata.json
+  test: dictionaries/test_segdata.json
+  DATA_DIR: ./tears
+  sample_rate: 16000
+  waveform: "./sample.wav"
+  prompt: "Please describe the speaker"
+train:
+  total_epochs: 100
+  save_every: 4 #10 
+  eval_every: 10 #10
+  batch_size: 64 # 64 90
+  lambda_val: 1
+  lr: !!float 0.0001
+  weight_decay: !!float 1e-6
+  phone_frame: phone_vector
+  flag_global_local: global
+  snapshot_path: ./checkpoint_mlp_mapper/
+  
+sid_model:
+  d_model: 128
+  heads: 8
+  dropout: 0.001
+  sid_ck_name: "sid_model.pt" 
+  resume: True
+  
+wrapper:
+  map_type: mlp #transformer
+  text_decoder: 'gpt2'
+  emb_size: 192
+  prefix_size: 192
+  text_prefix_length: 80
+  sid_prefix_length: 40
+  text_prefix_length_clip: 80
+  sid_prefix_length_clip: 40
+  num_layers: 8
+  tok_len: 80
+  norm_sid_emb: True
+  mapper_ck_name: "mapper_ce_llm.pt" 
+  resume: True
+  gpu_id: 0  
+  device: 'cuda'
+
+wandb:
+  project: explainability
+  start_method: fork
+  service_wait: 100
