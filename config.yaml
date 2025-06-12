@@ -9,7 +9,7 @@ data:
   DATA_DIR: ./tears
   sample_rate: 16000
   waveform: "./sample.wav"
-  prompt: "Please describe the speaker"
+  prompt: "What's the speaker's age?"
 train:
   total_epochs: 100
   save_every: 4 #10 
