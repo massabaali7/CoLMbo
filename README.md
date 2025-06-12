@@ -71,6 +71,7 @@ prompts = [
     "What is the speaker's gender.",
     "What is the speaker's age?",
     "What is the speaker's dialect?",
+    "What is the speaker's race?",
     "What is the speaker's nationality?"
 ]
 ```
