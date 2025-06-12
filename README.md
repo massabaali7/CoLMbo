@@ -68,9 +68,9 @@ You can run prompts like:
 
 ```python
 prompts = [
-    "Describe the speaker's gender.",
+    "What is the speaker's gender.",
     "What is the speaker's age?",
-    "What is the speaker's gender inferred from their speech characteristics?",
+    "What is the speaker's dialect?",
     "What is the speaker's nationality?"
 ]
 ```
