@@ -84,12 +84,13 @@ CoLMbo will return natural language responses conditioned on speaker voice.
 If you find this useful in your research, please cite us:
 
 ```bibtex
-@misc{colmbopaper,
-  title={CoLMbo: A Speaker Language Model for Descriptive Profiling},
-  author={Massa Baali et al.},
+@misc{CoLMbo,
+  title = {CoLMbo: Speaker Language Model for Descriptive Profiling},
+  author = {Massa Baali and Shuo Han and Syed Abdul Hannan and Purusottam Samal and Karanveer Singh and Soham Deshmukh and Rita Singh and Bhiksha Raj},
   year={2025},
+  eprint={2506.09375},
   archivePrefix={arXiv},
-  eprint={XXXX},
+  url={https://arxiv.org/pdf/2506.09375},
   primaryClass={cs.CL}
 }
 ```
